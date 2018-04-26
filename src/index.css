@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Heebo+700|Source+Sans+Pro');
+
+body {
+  /* color: white !important; */
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  /* background: linear-gradient(to top, #181818, #161616); */
+  box-sizing: border-box;
+  background: linear-gradient(to right, #003079, #1cb5e0) no-repeat;
+  /* background: linear-gradient(to right, #1e3c72, #2a5298); */
+  font-family: 'Heebo', sans-serif !important;  
+}
+
+p {
+  margin: 0 !important;
+  padding: 0;
+}
+
+.Main {
+  border: 2px solid #bbb;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  background: #f6f6f6; 
+  height: 60vh;
+  width: 80%;
+  min-width: 820px;
+  max-width: 1000px;
+  min-height: 200px;
+  display: flex;
+  align-items: stretch;
+  /* box-shadow: 0px 3px 6px 3px rgba(0,0,0,0.3),
+              0px 5px 10px 5px rgba(0,0,0,0.2); */
+}
+
+.Chrono {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.Chrono .Timer{
+  flex: 2;
+}
+
+.Chrono .Details {
+  flex: 1;
+}
+
+
+.Records .list {
+  position: relative;
+  border: 1px solid #ccc;
+  max-height: 100%;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+/* TIMER */
+.Timer {
+  background-color: #222;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px 0 0 0;
+}
+
+.Timer {
+  padding: 50px;
+}
+
+.Timer h1 {
+  font-family: 'Heebo', sans-serif;
+  font-size: 7em;
+  font-weight: 700;
+}
+
+/* RECORDS */
+  .Records {
+    background-color: #555;
+    flex: 1;
+    padding: 20px;
+    border-radius: 0 10px 10px 0;
+  }
+
+.Records li {
+  width: 100%;
+  border-radius: 0 !important;
+  border: 0;
+  padding: 0 0 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: .2s;
+}
+
+.Records li:hover {
+  background-color: #f4f4f4;
+}
+
+.Records li .span {
+  cursor: pointer;
+  background-color: #000;
+  text-align: center;
+  color:white;
+  opacity: 0;
+  width: 0;
+  display: inline-block;
+  transition: width 0.2s linear, opacity 0.3s;
+}
+
+.Records li:hover .span {
+  width: 40px;
+  color: white;
+  opacity: 1;
+}
+
+/* DETAILS */
+.Details {
+  color: white;
+  background-color: #444;
+  border-radius: 0 0 0 10px;
+  padding: 30px;
+}
+
+.Details .stats {
+  text-align: left;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
